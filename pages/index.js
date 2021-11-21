@@ -64,7 +64,7 @@ export default function Home() {
       <div className="box-wrapper">
           {
             list.map((_, index) => {
-             return <a className="box" href={ _.type==='add'?'#':_.url } key={index} onClick={ ()=>add(_.type) }>
+             return <a className="box" target="_blank" href={ _.type==='add'?'#':_.url } key={index} onClick={ ()=>add(_.type) }>
                 <div className="img-wrapper">
                   <img src={ _.src } />
                 </div>
